@@ -8,24 +8,28 @@
 
 import Foundation
 
-struct PlayingCard
+struct PlayingCard: CustomStringConvertible
 {
+    var description: String { return "\(rank)-\(suit)"}
+    
     var suit: Suit
     var rank: Rank
     
     
     // Making the return an Int for the enum implicitly orders the cases.
     // These are considered 'raw values' or 'associated values'
-    enum Suit: String {
+    enum Suit: String, CustomStringConvertible {
         case spades = "♠️"
         case hearts = "❤️"
         case clubs = "♣️"
         case diamonds = "♦️"
         
         static var all = [Suit.spades,.hearts,.diamonds,.clubs]
+        
+        var description: String { return rawValue }
     }
     
-    enum Rank {
+    enum Rank: CustomStringConvertible {
         case ace
         case face(String)
         case numeric(Int)
@@ -48,6 +52,14 @@ struct PlayingCard
             }
             allRanks += [Rank.face("J"),.face("Q"),.face("K")]
             return allRanks
+        }
+        
+        var description: String {
+            switch self {
+            case .ace: return "A"
+            case .numeric(let pips): return String(pips)
+            case .face(let kind): return kind
+            }
         }
     }
 }
