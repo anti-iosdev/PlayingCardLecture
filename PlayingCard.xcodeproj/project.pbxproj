@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92E839C21626759004B16B8 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E839B21626759004B16B8 /* PlayingCardView.swift */; };
 		E933EE2C2152ADAE0058D576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933EE2B2152ADAE0058D576 /* AppDelegate.swift */; };
 		E933EE2E2152ADAE0058D576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933EE2D2152ADAE0058D576 /* ViewController.swift */; };
 		E933EE312152ADAE0058D576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E933EE2F2152ADAE0058D576 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E92E839B21626759004B16B8 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 		E933EE282152ADAE0058D576 /* PlayingCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E933EE2B2152ADAE0058D576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E933EE2D2152ADAE0058D576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,12 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				E933EE2D2152ADAE0058D576 /* ViewController.swift */,
-				E9E5781821619A40003B2618 /* PlayingCardDeck.swift */,
-				E933EE3E2152ADE50058D576 /* PlayingCard.swift */,
+				E92E839B21626759004B16B8 /* PlayingCardView.swift */,
 				E933EE2F2152ADAE0058D576 /* Main.storyboard */,
+				E933EE3E2152ADE50058D576 /* PlayingCard.swift */,
+				E9E5781821619A40003B2618 /* PlayingCardDeck.swift */,
 				E933EE322152ADB00058D576 /* Assets.xcassets */,
-				E933EE372152ADB00058D576 /* Info.plist */,
 				E933EE3D2152ADC40058D576 /* Supporting Files */,
+				E933EE372152ADB00058D576 /* Info.plist */,
 			);
 			path = PlayingCard;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				E933EE2E2152ADAE0058D576 /* ViewController.swift in Sources */,
 				E9E5781921619A40003B2618 /* PlayingCardDeck.swift in Sources */,
 				E933EE3F2152ADE50058D576 /* PlayingCard.swift in Sources */,
+				E92E839C21626759004B16B8 /* PlayingCardView.swift in Sources */,
 				E933EE2C2152ADAE0058D576 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
